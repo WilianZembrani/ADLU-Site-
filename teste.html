@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de Acessibilidade</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./cSS/TESTE.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body>
+
+ <header>
+  <div class="center">  
+    <div class="logo-container">
+        <img src="imagens/logo.png" alt="Logo da A.D.L.U" class="logo">
+    </div>
+
+    <div class="pesquisa">
+      <input type="text" class="search-text" placeholder="Pesquisar na ADLU...">
+      <a href="https://www.nãofunciona.com/" class="search-bnt">
+        <img class="loupe-white" src="imagens/loupe-white.svg" alt="width="25px" height="25px">
+      </a>
+  </div >
+<div class="botao">
+   
+  <ul class="cadastro">
+    <a href="index.html"><button class="btn btn-outline-light btn-cadastro">Inicio</button></a>
+</ul>
+ 
+</div>
+
+
+ </header>
+  <div class="zoom">
+  <button onclick="zoomIn()">A+ </button>
+  <button onclick="zoomOut()">A- </button>
+ </div>
+
+    <nav class="navbar navbar-expand-lg " >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> </nav>
+
+
+      <div class="texto">
+        <h1>Fórum de Acessibilidade</h1>
+        <p>Bem-vindo ao Fórum de Acessibilidade! Este espaço é dedicado a discutir e compartilhar informações sobre acessibilidade. Aqui, você encontrará conversas sobre tecnologias assistivas, boas práticas de design inclusivo e atualizações relacionadas à acessibilidade em diversos contextos. Junte-se a nós para aprender, trocar experiências e contribuir para tornar o mundo mais acessível a todos.</p>
+      </div>
+
+    <main class="container">
+        <div class="topic">
+            <span class="user-name">Usuário1</span>
+            <h2><a href="#">Título do Tópico 1</a></h2>
+            <p>Aqui está uma breve descrição do tópico. Os usuários podem compartilhar dúvidas e informações relacionadas à acessibilidade.</p>
+            <p><strong>Usuário:</strong> Nome do Usuário 1</p>
+        </div>
+
+        <div class="topic">
+            <span class="user-name">Usuário1</span>
+            <h2><a href="#">Título do Tópico 2</a></h2>
+            <p>Outra descrição do tópico. Os membros podem discutir e colaborar para resolver problemas relacionados à acessibilidade na web.</p>
+            <p><strong>Usuário:</strong> Nome do Usuário 2</p>
+        </div>
+
+        <div class="topic">
+            <span class="user-name">Usuário1</span>
+            <h2><a href="#">Título do Tópico 2</a></h2>
+            <p>Outra descrição do tópico. Os membros podem discutir e colaborar para resolver problemas relacionados à acessibilidade na web.</p>
+            <p><strong>Usuário:</strong> Nome do Usuário 2</p>
+        </div>
+
+        <div class="topic">
+            <span class="user-name">Usuário1</span>
+            <h2><a href="#">Título do Tópico 2</a></h2>
+            <p>Outra descrição do tópico. Os membros podem discutir e colaborar para resolver problemas relacionados à acessibilidade na web.</p>
+            <p><strong>Usuário:</strong> Nome do Usuário 2</p>
+        </div>
+
+      
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Entre em contato:</p>
+            <p>Telefone Fixo: (xx) xxxx-xxxx</p>
+            <p>Celular: (xx) xxxxx-xxxx</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+
+            <script>
+              let currentZoom = 100;
+          const zoomStep = 10;
+          
+          function zoomIn() {
+              currentZoom += zoomStep;
+              applyZoom();
+          }
+          
+          function zoomOut() {
+              currentZoom = Math.max(100, currentZoom - zoomStep);
+              applyZoom();
+          }
+          
+          function applyZoom() {
+              document.body.style.zoom = `${currentZoom}%`;
+             
+          }
+          </script>
+</body>
+</html>
